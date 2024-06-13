@@ -1,0 +1,25 @@
+.footer{
+    background-color:pink;
+    height:50px;
+    position: absolute;
+    top:678px;
+    width:100vw;
+    display: flex;
+}
+.footer img{
+    position: absolute;
+    height:40px;
+    left:800px;
+    top:5px;
+
+}
+.footer h3{
+    position: absolute;
+    left:700px;
+    bottom:-5px;
+    
+}
+.footer img:hover,.footer h3:hover{
+    background-color: rgba(255,255,255,0.3);
+
+}

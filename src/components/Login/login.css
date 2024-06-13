@@ -1,0 +1,45 @@
+.login-form input{
+  width:60%;
+  padding: 12px 20px;
+  margin:13px auto;
+  display:block;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.login-form input[type='submit']{
+  background-color:rgb(184, 47, 70); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  position:relative;
+  top:40px;
+}
+.login-form input[type='submit']:hover{
+    background-color:pink; 
+    color:rgb(184, 47, 70); 
+    font-weight: 600;
+    
+  } 
+  .login-link{
+    text-decoration: none;
+    position:absolute;
+    top:400px;
+    left:620px;
+  }
+  .login-heading{
+    margin-left:100px;
+  }
+  .login-form input[type='email']{
+    margin-top:170px;
+  }
+  .login-link:active{
+    color:white;
+  }
+  
