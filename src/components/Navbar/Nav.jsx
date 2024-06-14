@@ -43,7 +43,12 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
         )}
       </div>
       <img className="themeimg" src={themeimg} alt="img" type="button" onClick={handleClick}/>
-      <style>{`body{background-color:${theme};}`}</style>
+      <style>{`
+          body {
+            background-color: ${theme === 'black' ? 'white' : 'black'};
+            color: ${theme === 'black' ? 'black' : 'white'};
+          }
+        `}</style>
     </div>
   );
 };
