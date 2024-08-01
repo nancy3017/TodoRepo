@@ -1,46 +1,46 @@
-.main-nav-box{
+
+.main-nav-box {
     background-color: pink;
-    height:80px;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content:left;
-    width:100vw;
+    width: 100vw;
+    padding: 0 20px; 
+    box-sizing: border-box; 
 }
-.main-nav-box .Link{
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .Link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    margin-left:40px;
+    margin-left: 20px; 
     font-size: larger;
-    margin-right:0px;
-    color:black;
-    padding:10px 7px;
-   
+    color: black;
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
 }
-.Link:hover{
-    background-color:rgba(255,255,255,0.3)
+
+.Link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
-.main-nav-box h1{
-    margin-left:200px;
-    margin-right:900px;
-    -webkit-text-stroke:1px white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
+
+.homeimg img {
+    height: 28px; 
+    margin-top:9px;
+    margin-right: 20px; 
 }
-.main-nav-box img{
-    height: 30px;
-    position: absolute;
-    top:17px;
-    right:350px;
-    padding:8px 8px;
-}
-.main-nav-box img:hover{
-    background-color:rgba(255,255,255,0.3);
-}
-.themeimg{
-    left:1630px
-}
-.homeimg{
-   position: absolute;
-   margin-left:360px;
-   margin-top:-28px;
+
+.themeimg {
+    margin-left: 20px; 
+    margin-right: 20px;
 }

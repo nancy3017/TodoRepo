@@ -1,4 +1,4 @@
-// Login.js
+
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./login.css";
@@ -33,8 +33,8 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="main-regis-box">
-      <div className="Regis-box">
+    <div className="login-container">
+      <div className="login-box">
         <h1 className="login-heading">Login</h1>
         <form className="login-form" onSubmit={handleFormSubmit}>
           <input
@@ -64,4 +64,3 @@ const Login = ({ onLogin }) => {
 };
 
 export default Login;
-

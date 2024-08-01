@@ -1,27 +1,29 @@
-import React,{useContext} from "react";
+
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { themeContext } from '../../App'
+import { themeContext } from '../../App';
 import "./nav.css";
 import homeicon from "../../images/icons8-home-64 (1).png";
-import themeimg from "../../images/dark-theme.svg"
+import themeimg from "../../images/dark-theme.svg";
 
 const Navbar = ({ isLoggedIn, onLogout }) => {
+  const { theme, toggletheme } = useContext(themeContext);
+
   const handleLogoutClick = () => {
     onLogout();
   };
-  const {theme,toggletheme}=useContext(themeContext)
-  const handleClick=()=>{
-    toggletheme()
-  }
+
+  const handleClick = () => {
+    toggletheme();
+  };
 
   return (
     <div className="main-nav-box">
-      <h1>DoIT</h1>
-      <div>
+      <h1 className="logo">DoIT</h1>
+      <div className="nav-links">
         <NavLink to="/" className="homeimg">
           <img src={homeicon} alt="homeicon" />
         </NavLink>
-
         {!isLoggedIn && (
           <>
             <NavLink className="Link" to="/Register">
@@ -41,8 +43,8 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
             </NavLink>
           </>
         )}
+        <img className="themeimg" src={themeimg} alt="Theme toggle" type="button" onClick={handleClick} />
       </div>
-      <img className="themeimg" src={themeimg} alt="img" type="button" onClick={handleClick}/>
       <style>{`
           body {
             background-color: ${theme};
