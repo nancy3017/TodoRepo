@@ -12,8 +12,17 @@ const Login = ({ onLogin }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    onLogin();
-    navigate("/Todo");
+    const storedRegistrations = JSON.parse(localStorage.getItem("registrations")) || [];
+    const user = storedRegistrations.find(
+      (reg) => reg.email === loginData.email && reg.password === loginData.password
+    );
+
+    if (user) {
+      onLogin();
+      navigate("/Todo");
+    } else {
+      alert("Invalid email or password. Please try again.");
+    }
   };
 
   const handleChange = (e) => {
@@ -55,3 +64,4 @@ const Login = ({ onLogin }) => {
 };
 
 export default Login;
+

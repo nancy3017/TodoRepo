@@ -1,18 +1,17 @@
 .homebg{
     height:88vh;
-    /* background-image:url("C:\Users\nancy\Downloads\fwr2h6d7.png"); */
     background-size:contain;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .homebg div{
-    /* background-image:linear-gradient(45deg,#fd80a8 40%,#fcce42); */
+    background-image:linear-gradient(45deg,#fd80a8 40%,#fcce42);
     height:550px;
     width:550px;
-    /* border-radius:50%; */
-    /* border:10px dashed white;  */
-    /* box-shadow:0px 20px 20px grey;*/
+    border-radius:50%;
+    border:10px dashed white; 
+    box-shadow:0px 20px 20px grey;
     text-align: center; 
 }
 .homebg h1{

@@ -1,5 +1,4 @@
 .main-regis-box{
-    /* background-image:url("C:\Users\nancy\Downloads\fok6swag.png"); */
     background-size:cover;
     width:100vw;
     height:89vh;
@@ -11,7 +10,7 @@
     text-align: center;
     height:530px;
     width:600px;
-    /* background-image:linear-gradient(45deg,#fd80a8 40%,#fcce42); */
+    background-image:linear-gradient(45deg,#fd80a8 40%,#fcce42);
     border-radius:150px;
     border:5px dashed white; 
     box-shadow:0px 20px 20px grey;
@@ -28,7 +27,7 @@
 .Regis-box h1 {
    position: absolute;
    top:170px;
-   left:620px;
+   left:730px;
   }
 
 .Regis-box .input{
@@ -43,14 +42,8 @@
 .Regis-box input[type='text']{
   margin-top:70px;
 }
-.Regis-box input[type='radio'] {
-    display: inline-flex;
-    align-items: center; 
-    cursor: pointer;
 
-  }
-
-.Regis-box button {
+.Regis-button {
   background-color:rgb(184, 47, 70); 
   border: none;
   color: white;
@@ -62,7 +55,7 @@
   cursor: pointer;
   border-radius: 10px;
   position:relative;
-  top:480px;
+  top:50px;
 }
 
 .Regis-box button:hover {
@@ -73,8 +66,8 @@
 
 .register-link{
   position: absolute;
-  top:550px;
-left:660px;
+  top:580px;
+left:740px;
 text-decoration: none;}
 
 .register-link:hover{

@@ -1,4 +1,4 @@
-import { themeContext } from './App'
+import { ThemeContext } from './App'
 import "./Theme.css"
 
 

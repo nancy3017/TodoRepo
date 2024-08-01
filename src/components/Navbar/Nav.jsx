@@ -18,7 +18,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
     <div className="main-nav-box">
       <h1>DoIT</h1>
       <div>
-        <NavLink to="/">
+        <NavLink to="/" className="homeimg">
           <img src={homeicon} alt="homeicon" />
         </NavLink>
 

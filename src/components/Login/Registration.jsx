@@ -8,18 +8,12 @@ function Registration() {
     name: "",
     email: "",
     password: "",
-    gender: ""
   });
 
   const onFormSubmit = (e) => {
     e.preventDefault();
     console.log(registerObject);
     alert("Thank you! You are registered.");
-    
-    if (!registerObject.gender) {
-      alert("Please select a gender");
-      return;
-    }
     
     const existingRegistrations =
       JSON.parse(localStorage.getItem("registrations")) || [];
@@ -74,23 +68,8 @@ function Registration() {
               onChange={handleChange}
               required
             />
-            <h4>Select Gender</h4>
-            <input
-              type="radio"
-              name="gender"
-              value="male"
-              checked={registerObject.gender === "male"}
-              onChange={handleChange}
-            />
-            <label>Male</label>
-            <input
-              type="radio"
-              name="gender"
-              value="female"
-              checked={registerObject.gender === "female"}
-              onChange={handleChange}
-            />
-            <label>Female</label>
+          
+      
             <input className="Regis-button" type="submit" value="Register" />
           </form>
         </div>

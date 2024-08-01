@@ -36,7 +36,7 @@ function Todo() {
           <input className="btn" type="submit" value="ADD +" />
         </form>
       </div>
-      {/* <img src={datelogo} alt="img" /> */}
+      <img src={datelogo} alt="img" />
       <button className="showbutton" onClick={displayTable}>
         Show Table
       </button>
