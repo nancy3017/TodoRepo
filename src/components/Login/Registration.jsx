@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React, { useEffect, useState } from "react";
+>>>>>>> 3b635e1 (Your commit message)
 import { NavLink, useNavigate } from "react-router-dom";
 import "./registration.css";
 
@@ -12,14 +16,29 @@ const Registration = () => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     const existingRegistrations = JSON.parse(localStorage.getItem("registrations")) || [];
     existingRegistrations.push(registerObject);
     localStorage.setItem("registrations", JSON.stringify(existingRegistrations));
 
+=======
+>>>>>>> 3b635e1 (Your commit message)
     alert("Thank you! You are registered.");
     navigate("/Login");
   };
 
+<<<<<<< HEAD
+=======
+useEffect(()=>{
+  const existingRegistrations = JSON.parse(localStorage.getItem("registrations")) || [];
+  setRegisterObject(existingRegistrations)
+},[])
+useEffect(()=>{
+  localStorage.setItem("registrations", JSON.stringify(registerObject));
+},[registerObject])
+
+
+>>>>>>> 3b635e1 (Your commit message)
   const handleChange = (e) => {
     setRegisterObject({
       ...registerObject,

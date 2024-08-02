@@ -11,11 +11,25 @@ function Todo() {
     let planObject = Object.fromEntries(new FormData(e.target));
     setPlanList([...planList, planObject]);
     alert("Plan Added");
+<<<<<<< HEAD
     const existingPlan = JSON.parse(localStorage.getItem("plan-details")) || [];
     existingPlan.push(planObject);
     localStorage.setItem("plan-details", JSON.stringify(existingPlan));
   };
 
+=======
+  };
+
+  useEffect(() => {
+    const existingPlan= JSON.parse(localStorage.getItem("plan-details")) || [];
+    setPlanList(existingPlan);
+  }, []);
+  useEffect(()=>{
+    localStorage.setItem("plan-details", JSON.stringify(planList));
+  },[planList])
+
+
+>>>>>>> 3b635e1 (Your commit message)
   const displayTable = () => {
     navigate("/Table", { state: { planObject: planList } });
   };
